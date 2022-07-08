@@ -26,7 +26,7 @@ export class TodosComponent implements OnInit {
     ]
   }
 
-  toggleDone(id:number) {
+  toggleDone(id: number) {
     this.todos.map((item, idx) => {
       if( idx === id) item.completed = !item.completed;
       return item;
@@ -34,7 +34,7 @@ export class TodosComponent implements OnInit {
   }
 
   deleteTodo(id: number) {
-
+    this.todos = this.todos.filter((item, idx) => idx !== id);
   }
 
 }
