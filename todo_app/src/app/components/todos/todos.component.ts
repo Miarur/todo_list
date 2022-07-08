@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from 'src/app/models/Todo';
+import { Task } from 'src/app/models/Todo';
 
 @Component({
   selector: 'app-todos',
@@ -8,7 +8,7 @@ import { Todo } from 'src/app/models/Todo';
 })
 export class TodosComponent implements OnInit {
 
-  todos: Todo[] = [];
+  todos: Task[] = [];
   inputTodo: string = '';
 
 

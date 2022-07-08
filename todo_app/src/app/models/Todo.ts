@@ -1,4 +1,4 @@
-export type Todo = {
-  content?:string;
-  completed?:boolean;
+export type Task = {
+  content:string;
+  completed:boolean;
 }
