@@ -40,12 +40,17 @@ export class TodosComponent implements OnInit {
   }
 
   addTodo() {
-    this.todos.push({
-      content: this.inputTodo,
-      completed: false
-    });
+    if(this.inputTodo.length === 0) {
+      alert("Task is empty, try write something");
+    } else {
+      this.todos.push({
+        content: this.inputTodo,
+        completed: false
+      });
+      this.inputTodo = '';
 
-    this.inputTodo = '';
+    }
+
   }
 
   editTodo(id:number) {
