@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { TodosComponent } from './components/todos/todos.component';
+import { FormsModule } from '@angular/forms';
+import { NgModel } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { TodosComponent } from './components/todos/todos.component';
     TodosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
