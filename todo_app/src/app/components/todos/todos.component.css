@@ -20,14 +20,25 @@
 
 .todo .id {
   flex: 1 1 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .todo .content {
   flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .todo.done .content {
   text-decoration: line-through;
+}
+
+.delete,
+.edit {
+  margin: 20px;
 }
 
 .todo-input {
@@ -53,7 +64,7 @@
 
   background-color: #FE4430;
   color: #FFF;
-  margin: 15px auto;
+  margin: 20px auto;
   padding: 10, 15px;
   font-size: 18px;
   font-weight: 700;

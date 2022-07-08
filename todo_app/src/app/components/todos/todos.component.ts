@@ -48,4 +48,13 @@ export class TodosComponent implements OnInit {
     this.inputTodo = '';
   }
 
+  editTodo(id:number) {
+    console.log(this.todos[id])
+    let title = this.todos[id].content;
+    let result = prompt("Edit Task Title", title);
+    if (result !== null && result !== ""){
+      this.todos[id].content = result;
+    }
+  }
+
 }
