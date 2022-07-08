@@ -32,9 +32,12 @@
   padding: 20px;
 }
 
-.todo.done .content {
+.todo.done {
+  background-color: #1cde16;
   text-decoration: line-through;
 }
+
+
 
 .delete,
 .edit {
